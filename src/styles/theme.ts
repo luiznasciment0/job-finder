@@ -9,14 +9,18 @@ export default {
   },
   font: {
     family: {
-      primary: `font-family: 'Poppins', sans-serif`,
-      secondary: `font-family: 'Roboto', sans-serif`,
-      tertiary: `font-family: 'Montserrat', sans-serif`
+      primary: `'Poppins', -apple-system,
+        BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;`,
+      secondary: `'Roboto', sans-serif`,
+      tertiary: `'Montserrat', sans-serif`
     },
-    light: 300,
-    normal: 400,
-    medium: 500,
-    bold: 700,
+    weight: {
+      light: 300,
+      normal: 400,
+      medium: 500,
+      bold: 700
+    },
     sizes: {
       small: '1.2rem',
       medium: '1.4rem',
