@@ -2,18 +2,18 @@ import styled, { css } from 'styled-components'
 import theme from 'styles/theme'
 
 interface Props {
-  color: keyof typeof theme.colors
-  size: keyof typeof theme.font.sizes
-  weight: keyof typeof theme.font.weight
-  family: keyof typeof theme.font.family
-  tag: React.ElementType
+  color?: keyof typeof theme.colors
+  size?: keyof typeof theme.font.sizes
+  weight?: keyof typeof theme.font.weight
+  family?: keyof typeof theme.font.family
+  tag?: React.ElementType
 }
 
 const Typography = styled('p').attrs<Props>(({ tag = 'p' }) => ({
   as: `${tag}`
 }))<Props>`
   ${({
-    color = 'black',
+    color = 'darkBlue',
     size = 'medium',
     weight = 'normal',
     family = 'primary',
