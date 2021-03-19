@@ -7,6 +7,11 @@ export default {
     blue: '#1E86FF',
     darkBlue: '#334680'
   },
+  margin: {
+    small: '0.8rem',
+    medium: '1.4rem',
+    large: '2.6rem'
+  },
   font: {
     family: {
       primary: `'Poppins', -apple-system,
