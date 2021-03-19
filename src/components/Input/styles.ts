@@ -12,6 +12,9 @@ export const InputWrapper = styled.div<InputWrapperProps>`
     height: ${large ? '5.5rem' : '4.8rem'};
     padding: ${hasButton ? '1.6rem 0 1.6rem 1.6rem' : '1.6rem'};
   `}
+  &:focus-within {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 `
 
 export const StyledInput = styled.input<InputProps>`
