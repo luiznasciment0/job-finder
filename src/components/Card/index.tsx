@@ -1,5 +1,14 @@
 import Typography from 'components/Typography'
-import { StyledCard, CompanyLogo, InfoWrapper, JobType } from './styles'
+import WorldIcon from 'assets/world-icon.svg'
+import TimeIcon from 'assets/time-icon.svg'
+import {
+  StyledCard,
+  CompanyLogo,
+  InfoWrapper,
+  JobType,
+  Details,
+  DetailLabelWithIcon
+} from './styles'
 
 const Card = () => (
   <StyledCard>
@@ -21,6 +30,30 @@ const Card = () => (
           Full time
         </Typography>
       </JobType>
+      <Details>
+        <DetailLabelWithIcon>
+          <img src={WorldIcon} alt="World icon" />
+          <Typography
+            weight="medium"
+            size="small"
+            family="secondary"
+            color="palegray"
+          >
+            New York
+          </Typography>
+        </DetailLabelWithIcon>
+        <DetailLabelWithIcon>
+          <img src={TimeIcon} alt="Clock icon" />
+          <Typography
+            weight="medium"
+            size="small"
+            family="secondary"
+            color="palegray"
+          >
+            5 days ago
+          </Typography>
+        </DetailLabelWithIcon>
+      </Details>
     </InfoWrapper>
   </StyledCard>
 )

@@ -32,4 +32,16 @@ export const JobType = styled.div`
   border-radius: 4px;
 `
 
-// export const
+export const Details = styled.div`
+  display: flex;
+  gap: 2.85rem;
+`
+
+export const DetailLabelWithIcon = styled.div`
+  display: flex;
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.75rem;
+  }
+`
