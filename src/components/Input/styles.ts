@@ -7,6 +7,7 @@ export const InputWrapper = styled.div<InputWrapperProps>`
   align-items: center;
   box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.05);
   border-radius: 0.4rem;
+  background: #ffffff;
   max-width: 35rem;
   ${({ large, hasButton }) => css`
     height: ${large ? '5.5rem' : '4.8rem'};
