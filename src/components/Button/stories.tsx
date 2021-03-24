@@ -7,5 +7,3 @@ export default {
 } as Meta
 
 export const Default: Story = () => <Button>Search</Button>
-
-export const LargeButton: Story = () => <Button size="large">Search</Button>

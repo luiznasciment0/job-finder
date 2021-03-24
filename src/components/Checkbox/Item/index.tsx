@@ -12,6 +12,7 @@ const Item = ({ item }: ItemProps) => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue(e.target.value)
   }
+  // TODO: FAZER LABEL FICAR FORA DO INPUT, USAR HTMLFOR
   return (
     <ListItem>
       <Typography tag="label" weight="medium" size="medium" color="darkBlue">
