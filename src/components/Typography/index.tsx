@@ -1,15 +1,15 @@
 import styled, { css, DefaultTheme } from 'styled-components'
 import theme from 'styles/theme'
-import React from 'react'
+import React, { LabelHTMLAttributes } from 'react'
 
-interface Props {
+type Props = {
   color?: keyof typeof theme.colors
   size?: keyof typeof theme.font.sizes
   weight?: keyof typeof theme.font.weight
   family?: keyof typeof theme.font.family
   margin?: keyof typeof theme.margin
   tag?: React.ElementType
-}
+} & LabelHTMLAttributes<HTMLLabelElement>
 
 const marginModifier = {
   small: (theme: DefaultTheme) => css`

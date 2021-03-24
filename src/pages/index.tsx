@@ -1,5 +1,5 @@
-import Main from 'components/Main'
+import View from 'view'
 
 export default function Home() {
-  return <Main />
+  return <View />
 }
