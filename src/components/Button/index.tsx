@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 
 const Button = styled.button`
-  height: 4.7rem;
+  height: 4.8rem;
   border-radius: 0.4rem;
   background: #1e86ff;
   color: #ffffff;
