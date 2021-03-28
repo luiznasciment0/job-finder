@@ -18,6 +18,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
       font-family: ${theme.font.family.primary};
+      background: #f6f7fb;
     }
   `}
 `
