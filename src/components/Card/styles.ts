@@ -4,8 +4,10 @@ export const StyledCard = styled.div`
   display: flex;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   height: 14.7rem;
-  width: 34.4rem;
+  min-width: 34.4rem;
   padding: 1.2rem;
+  background: #ffffff;
+  border-radius: 0.4rem;
 `
 
 export const CompanyLogo = styled.div`
