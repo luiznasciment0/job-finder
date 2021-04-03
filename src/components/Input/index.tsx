@@ -1,9 +1,15 @@
+import { ChangeEventHandler } from 'react'
+
 import Button from 'components/Button'
 import WorldIcon from 'assets/world-icon.svg'
 import BagIcon from 'assets/bag-icon.svg'
-// get icons from https://fonts.google.com/icons
 
 import { StyledInput, InputWrapper, IconWrapper } from './styles'
+
+const icons = {
+  world: WorldIcon,
+  bag: BagIcon
+}
 
 export interface InputWrapperProps {
   icon?: 'world' | 'bag'
@@ -13,23 +19,28 @@ export interface InputWrapperProps {
 
 export interface InputProps {
   placeholder?: string
-}
-
-const icons = {
-  world: WorldIcon,
-  bag: BagIcon
+  handleChange: ChangeEventHandler<HTMLInputElement>
+  value: string
+  handleClick?: () => void
 }
 
 const Input = ({
   placeholder = 'City, state, zip code or country',
   icon = 'world',
   large = false,
-  hasButton = false
+  hasButton = false,
+  handleChange,
+  value,
+  handleClick
 }: InputProps & InputWrapperProps) => (
   <InputWrapper large={large} hasButton={hasButton}>
     <IconWrapper src={icons[icon]} />
-    <StyledInput placeholder={placeholder} />
-    {hasButton && <Button>Search</Button>}
+    <StyledInput
+      onChange={handleChange}
+      value={value}
+      placeholder={placeholder}
+    />
+    {hasButton && <Button onClick={handleClick}>Search</Button>}
   </InputWrapper>
 )
 

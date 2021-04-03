@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 
-import { InputProps, InputWrapperProps } from '.'
+import { InputWrapperProps } from '.'
 
 export const InputWrapper = styled.div<InputWrapperProps>`
   display: flex;
@@ -18,7 +18,7 @@ export const InputWrapper = styled.div<InputWrapperProps>`
   }
 `
 
-export const StyledInput = styled.input<InputProps>`
+export const StyledInput = styled.input`
   font-family: 'Poppins', sans-serif;
   border: none;
   font-size: 1.2rem;
